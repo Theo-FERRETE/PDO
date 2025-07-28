@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body full viewport + centrer le contenu */
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    color: #333;
+}
+
+/* Container du formulaire */
+.container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Titres */
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #444;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1.8px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Bouton */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+button:hover {
+    background: #a4a4a4;
+}
+
+/* Messages d'erreur et succès */
+.error {
+    background-color: #ffe0e0;
+    color: #b00020;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Liens */
+a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #d7d7d7;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
